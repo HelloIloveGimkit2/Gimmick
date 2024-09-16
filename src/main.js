@@ -5,7 +5,7 @@ import fs from 'fs';
 import paths from './paths.js';
 
 (async () => {
-    let script = await axios.get(`https://raw.githubusercontent.com/TheLazySquid/GimkitCheat/main/build/bundle.js`);
+    let script = await axios.get(`https://github.com/HelloIloveGimkit2/GimkitCheat/raw/main/build/bundle.js`);
     if (!fs.existsSync('./src/cheat')) fs.mkdirSync('./src/cheat');
     fs.writeFileSync(`./src/cheat/bundle.js`, script.data);
     
