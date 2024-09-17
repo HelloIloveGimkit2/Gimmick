@@ -24,5 +24,5 @@ import paths from './paths.js';
         await (await import(`./routes/${file.handler}.js`)).default(req, res, path);
     });
 
-    app.listen(6060, () => console.log(`gimmick @ http://localhost:6060`));
+    app.listen(3000, () => console.log(`gimmick @ http://localhost:3000`));
 })();
